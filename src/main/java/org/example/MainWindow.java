@@ -1,182 +1,65 @@
 package org.example;
 
-import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
-import org.apache.jena.ontology.OntModelSpec;
-import org.apache.jena.rdf.model.ModelFactory;
 import javax.swing.*;
 import java.awt.*;
 
+// Главное окно приложения — точка входа в UI.
+// Содержит панель вывода, поле ввода имени индивидуума и все кнопки управления.
 public class MainWindow {
 
-    public static LLMOntologyApp llmOntologyApp = new LLMOntologyApp();
+
+// Константы
+
+
+    // Заголовок главного окна
+    private static final String WINDOW_TITLE = "Онтология";
+
+    // Доля высоты для каждой строки GridBagLayout
+    private static final double WEIGHT_OUTPUT  = 0.87; // область вывода — 87%
+    private static final double WEIGHT_INPUT   = 0.03; // поле ввода — 3%
+    private static final double WEIGHT_BUTTONS = 0.10; // панель кнопок — 10%
+
+    private static final Insets PANEL_INSETS = new Insets(5, 5, 5, 5);
+
+
+// Поля
+
+
+    private static final LLMOntologyApp app = new LLMOntologyApp();
+
+    // Модель онтологии, разделяемая между всеми окнами приложения
     private static OntModel model;
     private static int w;
     private static int h;
 
+
+// Конструктор
+
+
     public MainWindow(OntModel model, int w, int h) {
-        this.model = model;
-        this.w = w;
-        this.h = h;
+        MainWindow.model = model;
+        MainWindow.w = w;
+        MainWindow.h = h;
     }
 
-    public static void startProgramm(){
-        JFrame frame = new JFrame("Антология");
 
-        // --- Компоненты ---
-        JTextArea jTextArea = new JTextArea();
-        jTextArea.setLineWrap(true);
-        jTextArea.setWrapStyleWord(true);
+// Точка входа — создаёт и показывает главное окно
 
-        JPopupMenu jPopupMenu = new JPopupMenu();
-        JPopupMenu jPopupMenu_2 = new JPopupMenu();
+    public static void startProgramm() {
+        JFrame frame = new JFrame(WINDOW_TITLE);
 
-        JMenuItem jMenuBar  = new JMenuItem("Копировать");
-        JMenuItem jMenuBar_2  = new JMenuItem("Вставить");
-        JMenuItem jMenuBar_3  = new JMenuItem("Копировать");
-        jMenuBar.addActionListener(e -> jTextArea.copy());
-        jMenuBar_2.addActionListener(e -> jTextArea.paste());
+        // Создаём текстовые области и навешиваем контекстные меню
+        JTextArea inputArea  = createInputArea();
+        JTextArea outputArea = createOutputArea();
+        attachEditMenu(inputArea,  true);   // копировать + вставить
+        attachEditMenu(outputArea, false);  // только копировать
 
-        jTextArea.setComponentPopupMenu(jPopupMenu);
+        // Собираем корневую панель и добавляем в окно
+        frame.add(buildLayout(frame, inputArea, outputArea));
 
-        JTextArea jTextArea_print = new JTextArea();
-        jTextArea_print.setLineWrap(true);
-        jTextArea_print.setWrapStyleWord(true);
-        jTextArea_print.setEditable(false);
-
-        jMenuBar_3.addActionListener(e -> jTextArea_print.copy());
-
-
-        jTextArea_print.setEditable(false);
-
-        jPopupMenu.add(jMenuBar);
-        jPopupMenu.add(jMenuBar_2);
-        jPopupMenu_2.add(jMenuBar_3);
-        jTextArea.setComponentPopupMenu(jPopupMenu);
-        jTextArea_print.setComponentPopupMenu(jPopupMenu_2);
-
-        JPanel j_in = new JPanel(new BorderLayout());
-        j_in.setBorder(BorderFactory.createTitledBorder("Ввод"));
-        j_in.add(new JScrollPane(jTextArea), BorderLayout.CENTER);
-
-        JPanel j_out = new JPanel(new BorderLayout());
-        j_out.setBorder(BorderFactory.createTitledBorder("Вывод"));
-        j_out.add(new JScrollPane(jTextArea_print), BorderLayout.CENTER);
-
-        JPanel bat = new JPanel(new FlowLayout(FlowLayout.CENTER));
-
-        JButton jButton = new JButton("Вывести классы");
-        jButton.addActionListener(e ->
-        {
-            jTextArea_print.setText("");
-            llmOntologyApp.print_name_class(model, jTextArea_print);
-        });
-        bat.add(jButton);
-
-        JButton jButton_1 = new JButton("Вывести дерево с классами и индивидуумами");
-        jButton_1.addActionListener(e ->
-        {
-            jTextArea_print.setText("");
-            llmOntologyApp.printFullClassHierarchy(model, jTextArea_print);
-        });
-        bat.add(jButton_1);
-
-        JButton jButton_2 = new JButton("Вывести индивидуумов");
-        jButton_2.addActionListener(e ->
-        {
-            jTextArea_print.setText("");
-            llmOntologyApp.print_Ind(model, jTextArea_print);
-        });
-        bat.add(jButton_2);
-
-        JButton jButton_3 = new JButton("Вывести свойства индивидуумов");
-        jButton_3.addActionListener(e ->
-        {
-
-            String text = jTextArea.getText();
-            jTextArea_print.setText("");
-            llmOntologyApp.print_Ind_Prop(model, jTextArea_print, text);
-        });
-        bat.add(jButton_3);
-
-        JButton jButton_4 = new JButton("Вставить класс");
-        jButton_4.addActionListener(e ->
-        {
-
-            int w = frame.getWidth();
-            int h = frame.getHeight();
-
-            InsertPartClass insertPartClass = new InsertPartClass(w, h, model);
-            insertPartClass.insert_start();
-            frame.dispose();
-
-        });
-        bat.add(jButton_4);
-
-        JButton jButton_5 = new JButton("Вставить индивидуума");
-        jButton_5.addActionListener(e ->
-        {
-
-            int w = frame.getWidth();
-            int h = frame.getHeight();
-
-            WindowCreatingIndividual windowCreatingIndividual = new WindowCreatingIndividual(w, h, model);
-            windowCreatingIndividual.insert_start(frame);
-
-        });
-        bat.add(jButton_5);
-
-        JButton jButton_6 = new JButton("Удалить объект");
-        jButton_6.addActionListener(e ->
-        {
-
-            llmOntologyApp.delete(model, jTextArea_print, frame);
-
-        });
-        bat.add(jButton_6);
-
-        JButton jButton_7 = new JButton("Сохранить");
-        jButton_7.addActionListener(e ->
-        {
-
-            jTextArea_print.setText("");
-            llmOntologyApp.saveWithConfirmation(model, frame, jTextArea_print);
-
-        });
-        bat.add(jButton_7);
-
-        // --- Главная панель с GridBagLayout ---
-        JPanel jPanel = new JPanel(new GridBagLayout());
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.fill = GridBagConstraints.BOTH; // растягивать по ширине и высоте
-        gbc.insets = new Insets(5, 5, 5, 5); // отступы между панелями
-
-        // j_out — верхняя, занимает 60% высоты
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.weightx = 1.0;
-        gbc.weighty = 0.87; // 87%
-        jPanel.add(j_out, gbc);
-
-        // j_in — средняя, занимает 30% высоты
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.weightx = 1.0;
-        gbc.weighty = 0.03; // 3%
-        jPanel.add(j_in, gbc);
-
-        // bat — нижняя, занимает 10% высоты
-        gbc.gridx = 0;
-        gbc.gridy = 2;
-        gbc.weightx = 1.0;
-        gbc.weighty = 0.1; // 10%
-        jPanel.add(bat, gbc);
-
-        frame.add(jPanel);
-
-        NewJFrame newJFrame = new NewJFrame();
-
-        newJFrame.setupCloseHandler(frame, model);
+        // Подключаем обработчик закрытия с предложением сохранить онтологию
+        new NewJFrame().setupCloseHandler(frame, model);
 
         frame.setSize(w, h);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -184,4 +67,148 @@ public class MainWindow {
         frame.setVisible(true);
     }
 
+
+// Создание компонентов
+
+
+    // Создаёт редактируемую текстовую область с переносом строк.
+    private static JTextArea createInputArea() {
+        JTextArea area = new JTextArea();
+        area.setLineWrap(true);
+        area.setWrapStyleWord(true);
+        return area;
+    }
+
+    // Создаёт нередактируемую область для вывода результатов.
+    private static JTextArea createOutputArea() {
+        JTextArea area = createInputArea();
+        area.setEditable(false);
+        return area;
+    }
+
+    // Навешивает контекстное меню на текстовую область.
+    // withPaste=true → «Копировать» + «Вставить», иначе только «Копировать».
+    private static void attachEditMenu(JTextArea area, boolean withPaste) {
+        JPopupMenu menu = new JPopupMenu();
+        JMenuItem copy = new JMenuItem("Копировать");
+        copy.addActionListener(e -> area.copy());
+        menu.add(copy);
+        if (withPaste) {
+            JMenuItem paste = new JMenuItem("Вставить");
+            paste.addActionListener(e -> area.paste());
+            menu.add(paste);
+        }
+        area.setComponentPopupMenu(menu);
+    }
+
+
+// Сборка интерфейса
+
+
+    // Собирает корневую панель GridBagLayout: вывод - ввод - кнопки.
+    private static JPanel buildLayout(JFrame frame,
+                                      JTextArea input,
+                                      JTextArea output) {
+        JPanel root = new JPanel(new GridBagLayout());
+        GridBagConstraints gbc = defaultGbc();
+
+        // Строка 0 — область вывода результатов (основная часть окна)
+        gbc.gridy = 0; gbc.weighty = WEIGHT_OUTPUT;
+        root.add(titledScrollPanel("Вывод", output), gbc);
+
+        // Строка 1 — поле ввода имени индивидуума для поиска свойств
+        gbc.gridy = 1; gbc.weighty = WEIGHT_INPUT;
+        root.add(titledScrollPanel("Имя индивидуума", input), gbc);
+
+        // Строка 2 — панель кнопок управления
+        gbc.gridy = 2; gbc.weighty = WEIGHT_BUTTONS;
+        root.add(buildButtonPanel(frame, input, output), gbc);
+
+        return root;
+    }
+
+    // Оборачивает компонент в панель с прокруткой и рамкой с заголовком.
+    private static JPanel titledScrollPanel(String title, JTextArea area) {
+        JPanel panel = new JPanel(new BorderLayout());
+        panel.setBorder(BorderFactory.createTitledBorder(title));
+        panel.add(new JScrollPane(area), BorderLayout.CENTER);
+        return panel;
+    }
+
+    // Возвращает преднастроенный GridBagConstraints:
+    // растяжение по обеим осям, единственная колонка (gridx=0).
+    private static GridBagConstraints defaultGbc() {
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.fill    = GridBagConstraints.BOTH;
+        gbc.insets  = PANEL_INSETS;
+        gbc.gridx   = 0;
+        gbc.weightx = 1.0;
+        return gbc;
+    }
+
+
+// Панель кнопок
+
+
+    // Создаёт панель со всеми кнопками управления онтологией.
+    private static JPanel buildButtonPanel(JFrame frame,
+                                           JTextArea input,
+                                           JTextArea output) {
+        JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER, 8, 8));
+
+        // «Вывести классы» — плоский список всех классов онтологии
+        panel.add(button("Вывести классы", e -> {
+            output.setText("");
+            app.printAllClasses(model, output);
+        }));
+
+        // «Вывести дерево» — иерархия классов с индивидуумами
+        panel.add(button("Вывести дерево", e -> {
+            output.setText("");
+            app.printFullClassHierarchy(model, output);
+        }));
+
+        // «Вывести индивидуумов» — список всех индивидуумов с их классами
+        panel.add(button("Вывести индивидуумов", e -> {
+            output.setText("");
+            app.printAllIndividuals(model, output);
+        }));
+
+        // «Свойства» — выводит свойства индивидуума, имя которого введено в поле ввода
+        panel.add(button("Свойства индивидуума", e -> {
+            output.setText("");
+            app.printIndividualProperties(model, output, input.getText().trim());
+        }));
+
+        // «Вставить класс» — открывает окно добавления подкласса
+        panel.add(button("Вставить класс", e -> {
+            new InsertPartClass(frame.getWidth(), frame.getHeight(), model)
+                    .insert_start();
+            frame.dispose(); // закрываем главное окно при переходе
+        }));
+
+        // «Вставить индивидуума» — открывает окно создания индивидуума
+        panel.add(button("Вставить индивидуума", e ->
+                new WindowCreatingIndividual(frame.getWidth(), frame.getHeight(), model)
+                        .insert_start(frame)));
+
+        // «Удалить объект» — диалог ввода имени и удаление класса или индивидуума
+        panel.add(button("Удалить объект", e ->
+                app.delete(model, output, frame)));
+
+        // «Сохранить» — сохраняет онтологию с диалогом подтверждения
+        panel.add(button("Сохранить", e -> {
+            output.setText("");
+            app.saveWithConfirmation(model, frame, output);
+        }));
+
+        return panel;
+    }
+
+    // Фабричный метод — создаёт JButton с заданным текстом и обработчиком.
+    private static JButton button(String label, java.awt.event.ActionListener action) {
+        JButton btn = new JButton(label);
+        btn.addActionListener(action);
+        return btn;
+    }
 }

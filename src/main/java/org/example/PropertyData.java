@@ -1,17 +1,34 @@
 package org.example;
 
 import org.apache.jena.ontology.OntProperty;
+import javax.swing.JCheckBox;
 
-import javax.swing.*;
-
+// Контейнер данных для одного свойства онтологии в UI выбора свойств.
+// Связывает чекбокс на экране с соответствующим OntProperty из модели.
 public class PropertyData {
-    JCheckBox checkBox;
-    public OntProperty property;
-    boolean isObjectProperty;
 
-    PropertyData(JCheckBox cb, OntProperty p, boolean isObj) {
-        this.checkBox = cb;
-        this.property = p;
-        this.isObjectProperty = isObj;
+
+// Поля
+
+
+    // Чекбокс, отображаемый в списке свойств при создании индивидуума
+    public final JCheckBox checkBox;
+
+    // Свойство онтологии (объектное или примитивное)
+    public final OntProperty property;
+
+    // true — объектное свойство (ссылка на ресурс),
+    // false — примитивное свойство (литеральное значение)
+    public final boolean isObjectProperty;
+
+
+// Конструктор
+
+
+    // Создаёт запись о свойстве с привязанным чекбоксом.
+    public PropertyData(JCheckBox checkBox, OntProperty property, boolean isObjectProperty) {
+        this.checkBox        = checkBox;
+        this.property        = property;
+        this.isObjectProperty = isObjectProperty;
     }
 }
