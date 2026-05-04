@@ -232,7 +232,7 @@
     <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#названиеПриложения -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#названиеПриложения">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#названиеОрганизации"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -323,7 +323,7 @@
     <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#странаРегистрации -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#странаРегистрации">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#размерДатасета"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1319,7 +1319,6 @@
         <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
         <untitled-ontology-11:названиеПриложения>AutoGPT</untitled-ontology-11:названиеПриложения>
         <untitled-ontology-11:типИнтерфейса>Python Script</untitled-ontology-11:типИнтерфейса>
-        <untitled-ontology-11:типИнтерфейса rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:типИнтерфейса>
     </owl:NamedIndividual>
     
 
@@ -1360,7 +1359,6 @@
         <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic_Dev"/>
         <untitled-ontology-11:версия>2.0</untitled-ontology-11:версия>
         <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годВыпуска>
-        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:длинаКонтекста>
         <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</untitled-ontology-11:длинаКонтекста>
         <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
         <untitled-ontology-11:названиеМодели>Claude 2</untitled-ontology-11:названиеМодели>
@@ -1643,7 +1641,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI_Org">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI"/>
-        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI_Org"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain_Org"/>
         <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</untitled-ontology-11:годОснования>
         <untitled-ontology-11:названиеОрганизации>EleutherAI</untitled-ontology-11:названиеОрганизации>
         <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйИсходный>
@@ -1773,7 +1771,7 @@
         <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
         <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data"/>
         <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
-        <untitled-ontology-11:версия rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</untitled-ontology-11:версия>
+        <untitled-ontology-11:версия>4.0</untitled-ontology-11:версия>
         <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годВыпуска>
         <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128000</untitled-ontology-11:длинаКонтекста>
         <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
@@ -1848,7 +1846,6 @@
         <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65536</untitled-ontology-11:длинаКонтекста>
         <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
         <untitled-ontology-11:названиеМодели>Gemini Ultra</untitled-ontology-11:названиеМодели>
-        <untitled-ontology-11:названиеМодели rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-11:названиеМодели>
         <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйДоступ>
         <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">150000000000</untitled-ontology-11:числоПараметров>
     </owl:NamedIndividual>
