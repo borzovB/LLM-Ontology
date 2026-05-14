@@ -1,0 +1,2427 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-11="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#имеетАрхитектуру -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#имеетАрхитектуру">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#использует -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#использует">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#используетОбучение -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#используетОбучение">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#обученаНа -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#обученаНа">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#партнёрС -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#партнёрС">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#разрабатывает -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#разрабатывает">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#разработанаКем -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#разработанаКем">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#разработаноКем -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#разработаноКем">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#являетсяВерсией -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#являетсяВерсией">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#активационнаяФункция -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#активационнаяФункция">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#версия -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#версия">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#годВыпуска -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#годВыпуска">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#годОснования -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#годОснования">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#длинаКонтекста -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#длинаКонтекста">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#источник -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#источник">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#лицензия -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#лицензия">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#модальность -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#модальность">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#названиеМодели -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#названиеМодели">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#названиеОрганизации -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#названиеОрганизации">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#названиеПриложения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#названиеПриложения">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#оптимизатор -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#оптимизатор">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#открытыйДоступ -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#открытыйДоступ">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#открытыйИсходный -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#открытыйИсходный">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#платная -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#платная">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#размерБатча -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#размерБатча">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#размерДатасета -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#размерДатасета">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#размерностьЭмбеддинга -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#размерностьЭмбеддинга">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#скоростьОбучения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#скоростьОбучения">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#странаРегистрации -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#странаРегистрации">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#типИнтерфейса -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#типИнтерфейса">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#функцияПотерь -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#функцияПотерь">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоГоловВнимания -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоГоловВнимания">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоПараметров -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоПараметров">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоСлоёв -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоСлоёв">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоТокенов -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоТокенов">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоЭпох -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#числоЭпох">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#языки -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#языки">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AI21Labs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AI21Labs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИсследовательскаяЛаборатория"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Adapter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Adapter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PEFT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Alpaca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Alpaca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИнструкционныйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИсследовательскаяЛаборатория"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AutoGPT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AutoGPT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#АгентнаяСистема"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#C4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#C4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТекстовыйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ChatGPT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ChatGPT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Чатбот"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeAI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeAI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Чатбот"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeSonnet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeSonnet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude_серия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude_серия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeLlama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeLlama">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeSearchNet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeSearchNet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#КодовыйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТекстовыйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CrewAI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CrewAI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#АгентнаяСистема"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Cursor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Cursor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Кодогенератор"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DPO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DPO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#RLHF"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Decoder_only -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Decoder_only">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Трансформер"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DeepMind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DeepMind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИсследовательскаяЛаборатория"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DenseMoE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DenseMoE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MixtureOfExperts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Dolly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Dolly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИнструкционныйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ОткрытоеСообщество"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Encoder_Decoder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Encoder_Decoder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Трансформер"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Encoder_only -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Encoder_only">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Трансформер"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#FLAN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#FLAN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИнструкционныйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT_серия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT_серия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GRPO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GRPO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#RLHF"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiApp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiApp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Чатбот"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiPro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiPro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Gemini_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiUltra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiUltra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Gemini_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Gemini_серия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Gemini_серия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GitHubCopilot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GitHubCopilot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Кодогенератор"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#КорпоративнаяКоманда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ОткрытоеСообщество"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Квантизация"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Квантизация"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LAION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LAION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МультимодальныйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA_серия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA_серия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LangChain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LangChain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#АгентнаяСистема"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LoRA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LoRA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PEFT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#КорпоративнаяКоманда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MicrosoftResearch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MicrosoftResearch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#КорпоративнаяКоманда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mistral7B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mistral7B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mistral_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MistralAI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MistralAI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ОткрытоеСообщество"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mistral_серия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mistral_серия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mixtral8x7B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mixtral8x7B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mistral_серия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MixtureOfExperts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MixtureOfExperts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИсследовательскаяЛаборатория"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAssistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAssistant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#РазговорныйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PEFT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PEFT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Дообучение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#RLHF"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Perplexity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Perplexity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ПоисковыйАссистент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#QLoRA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#QLoRA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PEFT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#RLHF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#RLHF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ShareGPT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ShareGPT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#РазговорныйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MixtureOfExperts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#StateSpaceModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#StateSpaceModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SupervisedFineTuning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SupervisedFineTuning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Дообучение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Tabnine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Tabnine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Кодогенератор"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТекстовыйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#TheStack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#TheStack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#КодовыйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#YouCom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#YouCom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ПоисковыйАссистент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#mC4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#mC4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МультиязычныйДатасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#АвторегрессионноеМоделирование -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#АвторегрессионноеМоделирование">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Преобучение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#АгентнаяСистема -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#АгентнаяСистема">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БольшаяЯзыковаяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БольшаяЯзыковаяМодель"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#обученаНа"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#разработанаКем"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#имеетАрхитектуру"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БольшаяЯзыковаяМодель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БольшаяЯзыковаяМодель"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ГибриднаяАрхитектура -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ГибриднаяАрхитектура">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БольшаяЯзыковаяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Дистилляция -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Дистилляция">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Дообучение -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Дообучение">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ЗакрытаяМодель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ЗакрытаяМодель">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИнструкционныйДатасет -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИнструкционныйДатасет">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИсследовательскаяЛаборатория -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ИсследовательскаяЛаборатория">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Квантизация -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Квантизация">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#КодовыйДатасет -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#КодовыйДатасет">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Кодогенератор -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Кодогенератор">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#КорпоративнаяКоманда -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#КорпоративнаяКоманда">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МаскированноеМоделирование -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МаскированноеМоделирование">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Преобучение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МультимодальноеПриложение -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МультимодальноеПриложение">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МультимодальныйДатасет -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МультимодальныйДатасет">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МультиязычныйДатасет -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МультиязычныйДатасет">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ОткрытаяМодель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ОткрытаяМодель">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БазоваяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ОткрытоеСообщество -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ОткрытоеСообщество">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ПоисковыйАссистент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ПоисковыйАссистент">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Преобучение -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Преобучение">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БольшаяЯзыковаяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#РазговорныйДатасет -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#РазговорныйДатасет">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Разработчик">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БольшаяЯзыковаяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТекстовыйДатасет -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТекстовыйДатасет">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Датасет"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ТипОбучения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#БольшаяЯзыковаяМодель"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Трансформер -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Трансформер">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Архитектура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Чатбот -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Чатбот">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Приложение"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AI21Labs_Org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AI21Labs_Org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AI21Labs"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace_Org"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>AI21 Labs</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>Israel</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Adapter_Standard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Adapter_Standard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Adapter"/>
+        <untitled-ontology-11:оптимизатор>AdamW</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0001</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>CrossEntropy</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Alpaca_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Alpaca_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Alpaca"/>
+        <untitled-ontology-11:источник>Stanford</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Instruction</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">52000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">10000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>English</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic_Dev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic_Dev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>Anthropic</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>USA</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AutoGPT_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AutoGPT_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#AutoGPT"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:названиеПриложения>AutoGPT</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:типИнтерфейса>Python Script</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#C4_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#C4_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#C4"/>
+        <untitled-ontology-11:источник>Common Crawl</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Text</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">750000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">175000000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>English</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ChatGPT_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ChatGPT_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ChatGPT"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:названиеПриложения>ChatGPT</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>Web/Mobile</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude2_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude2_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude2"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic_Dev"/>
+        <untitled-ontology-11:версия>2.0</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Claude 2</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">137000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude3_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude3_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude3"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DPO_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic_Dev"/>
+        <untitled-ontology-11:версия>Opus</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200000</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Claude 3 Opus</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">200000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeAI_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeAI_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeAI"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic_Dev"/>
+        <untitled-ontology-11:названиеПриложения>Claude</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>Web</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeSonnet_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeSonnet_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClaudeSonnet"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DPO_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Anthropic_Dev"/>
+        <untitled-ontology-11:являетсяВерсией rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Claude3_Instance"/>
+        <untitled-ontology-11:версия>3.5 Sonnet</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200000</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Claude 3.5 Sonnet</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">80000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClosedModel_Generic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ClosedModel_Generic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ЗакрытаяМодель"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:версия>2.0</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32768</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Commercial</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Enterprise LLM</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">30000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeLlama_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeLlama_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeLlama"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Pretrain_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#TheStack_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI_Dev"/>
+        <untitled-ontology-11:версия>13B</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16384</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Llama 2 Community</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Code Llama</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">13000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeSearchNet_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeSearchNet_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CodeSearchNet"/>
+        <untitled-ontology-11:источник>GitHub</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Source Code</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2000000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">150000000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>Python, JavaScript, Java, PHP, Ruby, Go</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl"/>
+        <untitled-ontology-11:источник>Web Crawl</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Text</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">500000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">300000000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>English</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Copilot_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Copilot_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GitHubCopilot"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:названиеПриложения>GitHub Copilot</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>IDE Plugin</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CrewAI_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CrewAI_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CrewAI"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:названиеПриложения>CrewAI</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>Framework</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Cursor_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Cursor_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Cursor"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MicrosoftResearch_Org"/>
+        <untitled-ontology-11:названиеПриложения>Cursor</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>IDE (VS Code)</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DPO_Method -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DPO_Method">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DPO"/>
+        <untitled-ontology-11:оптимизатор>Adam</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00015</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>Preference Loss</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Decoder_only"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data"/>
+        <untitled-ontology-11:активационнаяФункция>GELU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12288</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderTurbo_Arch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderTurbo_Arch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Decoder_only"/>
+        <untitled-ontology-11:активационнаяФункция>SwiGLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16384</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">160</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DeepMind_Org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DeepMind_Org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DeepMind"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain_Org"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>DeepMind</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>United Kingdom</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DenseMoE_Large -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DenseMoE_Large">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DenseMoE"/>
+        <untitled-ontology-11:активационнаяФункция>SwiGLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8192</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DenseMoE_Standard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DenseMoE_Standard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DenseMoE"/>
+        <untitled-ontology-11:активационнаяФункция>SiLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4096</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Distillation_HiddenStates_MiniLM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Distillation_HiddenStates_MiniLM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Дистилляция"/>
+        <untitled-ontology-11:оптимизатор>Adam</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0003</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>MSE_Loss_HiddenStates</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Distillation_Logits_KD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Distillation_Logits_KD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Дистилляция"/>
+        <untitled-ontology-11:оптимизатор>AdamW</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0002</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>KLDivergence_Loss</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Dolly_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Dolly_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Dolly"/>
+        <untitled-ontology-11:источник>Databricks</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Instruction</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">15000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">5000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>English</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI_Org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI_Org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain_Org"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>EleutherAI</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>USA</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI_Research -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI_Research">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EleutherAI"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>EleutherAI Research Collective</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>International</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EncoderDecoder_Big -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EncoderDecoder_Big">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Encoder_Decoder"/>
+        <untitled-ontology-11:активационнаяФункция>GeGLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1024</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EncoderDecoder_T5_Style -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EncoderDecoder_T5_Style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Encoder_Decoder"/>
+        <untitled-ontology-11:активационнаяФункция>ReLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">768</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EncoderOnly_BERT_Style -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EncoderOnly_BERT_Style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Encoder_only"/>
+        <untitled-ontology-11:активационнаяФункция>GELU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">768</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EncoderOnly_Large -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#EncoderOnly_Large">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Encoder_only"/>
+        <untitled-ontology-11:активационнаяФункция>GELU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1024</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#FLAN_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#FLAN_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#FLAN"/>
+        <untitled-ontology-11:источник>Google Research</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Instruction</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">500000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>English</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT2_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT2_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT2"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Pretrain_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:версия>1.5B</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1024</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>MIT</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>GPT-2</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1500000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT3_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT3_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT3"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Pretrain_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:версия>davinci</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2048</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>GPT-3</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">175000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:версия>4.0</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128000</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>GPT-4</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1760000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderTurbo_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DPO_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:являетсяВерсией rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4_Instance"/>
+        <untitled-ontology-11:версия>Omni</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128000</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>GPT-4o</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1800000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GRPO_Method -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GRPO_Method">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GRPO"/>
+        <untitled-ontology-11:оптимизатор>RMSProp</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0002</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>Reward Loss</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiPro_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiPro_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiPro"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain_Org"/>
+        <untitled-ontology-11:версия>1.0 Pro</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32768</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Gemini Pro</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">50000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiUltra_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiUltra_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GeminiUltra"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DPO_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain_Org"/>
+        <untitled-ontology-11:версия>1.0 Ultra</untitled-ontology-11:версия>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65536</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Proprietary</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Gemini Ultra</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">150000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain_Org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain_Org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DeepMind_Org"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace_Org"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>Google Brain</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>USA</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace_Org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace_Org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>Hugging Face</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>USA</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Hybrid_MoEAttention -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Hybrid_MoEAttention">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ГибриднаяАрхитектура"/>
+        <untitled-ontology-11:активационнаяФункция>GeGLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5120</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Hybrid_TransformerSSM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Hybrid_TransformerSSM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ГибриднаяАрхитектура"/>
+        <untitled-ontology-11:активационнаяФункция>SwiGLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4096</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT4_NF4_Quant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT4_NF4_Quant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT4"/>
+        <untitled-ontology-11:оптимизатор>Adam</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00002</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>NormalizedFloat4_Loss</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT4_Standard_Quant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT4_Standard_Quant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT4"/>
+        <untitled-ontology-11:оптимизатор>AdamW</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00005</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>INT4_Quantization_Loss</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8_Dynamic_Quant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8_Dynamic_Quant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8"/>
+        <untitled-ontology-11:оптимизатор>Adam</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00005</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>DynamicRangeLoss</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8_PerChannel_Quant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8_PerChannel_Quant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8"/>
+        <untitled-ontology-11:оптимизатор>RMSProp</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0002</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>PerChannelMSE</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8_Standard_Quant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8_Standard_Quant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#INT8"/>
+        <untitled-ontology-11:оптимизатор>AdamW</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0001</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>QuantizationAwareLoss</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LAION_400M_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LAION_400M_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LAION"/>
+        <untitled-ontology-11:источник>Common Crawl</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Image-Text</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">400000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">0</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>Multi-language</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LAION_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LAION_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LAION"/>
+        <untitled-ontology-11:источник>Common Crawl</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Image-Text</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">5850000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">0</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>Multi-language</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA2_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA2_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA2"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI_Dev"/>
+        <untitled-ontology-11:версия>70B</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4096</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Llama 2 Community</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>LLaMA 2</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">70000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA3_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA3_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA3"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Pretrain_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI_Dev"/>
+        <untitled-ontology-11:версия>70B</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8192</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Meta License</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>LLaMA 3</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">70000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LangChain_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LangChain_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LangChain"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA3_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:названиеПриложения>LangChain</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>Framework</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LoRA_Standard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LoRA_Standard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LoRA"/>
+        <untitled-ontology-11:оптимизатор>AdamW</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0003</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>CrossEntropy</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MaskedLM_Method -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MaskedLM_Method">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МаскированноеМоделирование"/>
+        <untitled-ontology-11:оптимизатор>AdamW</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0002</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>CrossEntropy</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI_Dev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI_Dev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace_Org"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>Meta AI</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>USA</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MicrosoftResearch_Org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MicrosoftResearch_Org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MicrosoftResearch"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace_Org"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>Microsoft Research</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>USA</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mistral7B_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mistral7B_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mistral7B"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Pretrain_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MistralAI_Org"/>
+        <untitled-ontology-11:версия>v0.1</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8192</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Apache 2.0</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Mistral 7B</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">7000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MistralAI_Org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MistralAI_Org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MistralAI"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>Mistral AI</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>France</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mixtral8x7B_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mixtral8x7B_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Mixtral8x7B"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Pretrain_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#TheStack_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MistralAI_Org"/>
+        <untitled-ontology-11:версия>v0.1</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32768</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>Apache 2.0</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Mixtral 8x7B</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">46700000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI"/>
+        <untitled-ontology-11:партнёрС rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI_Dev"/>
+        <untitled-ontology-11:годОснования rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</untitled-ontology-11:годОснования>
+        <untitled-ontology-11:названиеОрганизации>OpenAI</untitled-ontology-11:названиеОрганизации>
+        <untitled-ontology-11:открытыйИсходный rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:открытыйИсходный>
+        <untitled-ontology-11:странаРегистрации>USA</untitled-ontology-11:странаРегистрации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAssistant_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAssistant_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAssistant"/>
+        <untitled-ontology-11:источник>LAION Community</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Conversation</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">16000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2000000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>Multi-language</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenModel_Generic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenModel_Generic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ОткрытаяМодель"/>
+        <untitled-ontology-11:имеетАрхитектуру rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#DecoderOnly_Arch"/>
+        <untitled-ontology-11:используетОбучение rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Pretrain_Method"/>
+        <untitled-ontology-11:обученаНа rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#CommonCrawl_Data"/>
+        <untitled-ontology-11:разработанаКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#HuggingFace_Org"/>
+        <untitled-ontology-11:версия>1.0</untitled-ontology-11:версия>
+        <untitled-ontology-11:годВыпуска rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-11:годВыпуска>
+        <untitled-ontology-11:длинаКонтекста rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8192</untitled-ontology-11:длинаКонтекста>
+        <untitled-ontology-11:лицензия>MIT</untitled-ontology-11:лицензия>
+        <untitled-ontology-11:названиеМодели>Open LLM Base</untitled-ontology-11:названиеМодели>
+        <untitled-ontology-11:открытыйДоступ rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:открытыйДоступ>
+        <untitled-ontology-11:числоПараметров rdf:datatype="http://www.w3.org/2001/XMLSchema#long">8000000000</untitled-ontology-11:числоПараметров>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO_Method -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO_Method">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#PPO"/>
+        <untitled-ontology-11:оптимизатор>AdamW</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0001</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>PPO Loss</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Perplexity_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Perplexity_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Perplexity"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain_Org"/>
+        <untitled-ontology-11:названиеПриложения>Perplexity AI</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>Web Search</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Pretrain_Method -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Pretrain_Method">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#АвторегрессионноеМоделирование"/>
+        <untitled-ontology-11:оптимизатор>AdamW</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0005</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>CrossEntropy</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#QLoRA_LowVRAM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#QLoRA_LowVRAM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#QLoRA"/>
+        <untitled-ontology-11:оптимизатор>Adafactor</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0001</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>CrossEntropy</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#QLoRA_Standard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#QLoRA_Standard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#QLoRA"/>
+        <untitled-ontology-11:оптимизатор>PagedAdamW_32bit</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0002</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>CrossEntropy</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SFT_Standard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SFT_Standard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SupervisedFineTuning"/>
+        <untitled-ontology-11:оптимизатор>AdamW</untitled-ontology-11:оптимизатор>
+        <untitled-ontology-11:размерБатча rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</untitled-ontology-11:размерБатча>
+        <untitled-ontology-11:скоростьОбучения rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00005</untitled-ontology-11:скоростьОбучения>
+        <untitled-ontology-11:функцияПотерь>CrossEntropy</untitled-ontology-11:функцияПотерь>
+        <untitled-ontology-11:числоЭпох rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-11:числоЭпох>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SSM_Hyena_Style -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SSM_Hyena_Style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#StateSpaceModel"/>
+        <untitled-ontology-11:активационнаяФункция>ReLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2048</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SSM_Mamba_Style -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SSM_Mamba_Style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#StateSpaceModel"/>
+        <untitled-ontology-11:активационнаяФункция>SiLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2560</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ShareGPT_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ShareGPT_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ShareGPT"/>
+        <untitled-ontology-11:источник>OpenAI API</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Conversation</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">500000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>English</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE_Arch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE_Arch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE"/>
+        <untitled-ontology-11:активационнаяФункция>ReLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8192</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE_Grok_Style -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE_Grok_Style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE"/>
+        <untitled-ontology-11:активационнаяФункция>GeLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6144</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE_Mixtral_Style -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE_Mixtral_Style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#SparseMoE"/>
+        <untitled-ontology-11:активационнаяФункция>SwiGLU</untitled-ontology-11:активационнаяФункция>
+        <untitled-ontology-11:размерностьЭмбеддинга rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4096</untitled-ontology-11:размерностьЭмбеддинга>
+        <untitled-ontology-11:числоГоловВнимания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-11:числоГоловВнимания>
+        <untitled-ontology-11:числоСлоёв rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-11:числоСлоёв>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Tabnine_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Tabnine_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#Tabnine"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA3_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#MetaAI_Dev"/>
+        <untitled-ontology-11:названиеПриложения>Tabnine</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>IDE Plugin</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#ThePile"/>
+        <untitled-ontology-11:источник>Academic/Web</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Text</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">825000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">350000000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>English</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#TheStack_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#TheStack_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#TheStack"/>
+        <untitled-ontology-11:источник>GitHub/GitLab</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Source Code</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">6000000000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">400000000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>Multiple Programming Languages</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#VisionApp_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#VisionApp_Instance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#МультимодальноеПриложение"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GPT4o_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#OpenAI_Dev"/>
+        <untitled-ontology-11:названиеПриложения>GPT-4 Vision App</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>API</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#YouCom_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#YouCom_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#YouCom"/>
+        <untitled-ontology-11:использует rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#LLaMA3_Instance"/>
+        <untitled-ontology-11:разработаноКем rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#GoogleBrain_Org"/>
+        <untitled-ontology-11:названиеПриложения>You.com</untitled-ontology-11:названиеПриложения>
+        <untitled-ontology-11:платная rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-11:платная>
+        <untitled-ontology-11:типИнтерфейса>Web Search</untitled-ontology-11:типИнтерфейса>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#mC4_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#mC4_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/untitled-ontology-11#mC4"/>
+        <untitled-ontology-11:источник>Common Crawl</untitled-ontology-11:источник>
+        <untitled-ontology-11:модальность>Text</untitled-ontology-11:модальность>
+        <untitled-ontology-11:размерДатасета rdf:datatype="http://www.w3.org/2001/XMLSchema#long">3500000000</untitled-ontology-11:размерДатасета>
+        <untitled-ontology-11:числоТокенов rdf:datatype="http://www.w3.org/2001/XMLSchema#long">600000000000</untitled-ontology-11:числоТокенов>
+        <untitled-ontology-11:языки>101 language</untitled-ontology-11:языки>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
